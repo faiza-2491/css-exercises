@@ -8,10 +8,14 @@ body {
   font-family: Besley, serif;
 }
 
+/* header flex container */
 .header {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  padding: 8px;
+  display: flex;
+  justify-content:space-between;
 }
 
 .profile-image {
@@ -27,6 +31,7 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  
 }
 
 button {
@@ -43,6 +48,21 @@ a {
   color: rebeccapurple;
 }
 
+/* list item flex container */
 ul {
   list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+
+/* left and right items flex containers */
+.left, .right
+{
+  display: flex;
+  gap: 16px;
+  align-items: center;
 }
